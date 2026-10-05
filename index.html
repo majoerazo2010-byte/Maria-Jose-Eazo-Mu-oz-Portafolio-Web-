@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María José Erazo | Portafolio Frontend & Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para iconos modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Barra de Navegación -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;MajoErazo/&gt;</a>
+            <nav class="navbar" id="navbar">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#terminal">Terminal</a>
+                <a href="#contacto" class="btn-nav">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Botón cambio de tema (Claro / Oscuro) -->
+                <button id="theme-toggle" class="theme-toggle-btn" title="Cambiar modo claro/oscuro">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-sparkles"></i> Frontend & Software Developer
+            </div>
+            <h1>Hola, soy <span class="gradient-text">María José</span></h1>
+            <p class="hero-subtitle">Apasionada por el desarrollo de software, la creación de experiencias web atractivas y el impacto positivo a través de la tecnología desde Medellín, Colombia.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary"><i class="fas fa-code"></i> Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contáctame</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-card-floating">
+                <div class="card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="file-name">dev.profile.js</span>
+                </div>
+                <pre><code><span class="keyword">const</span> developer = {
+  name: <span class="string">"María José Erazo"</span>,
+  role: <span class="string">"Frontend Developer"</span>,
+  location: <span class="string">"Medellín, CO"</span>,
+  passion: <span class="string">"Clean UI & Problem Solving"</span>,
+  status: <span class="boolean">true</span>
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
+ <!-- Sección Sobre Mí con Foto y Trayectoria -->
+<section class="about section" id="sobre-mi">
+    <div class="container">
+        <h2 class="section-title">Sobre <span>Mí</span></h2>
+        <p class="section-desc">Conoce un poco más de mi trayectoria, mi paso por la formación técnica y mi visión.</p>
+        
+        <div class="about-container-grid">
+            <!-- Columna de la Foto -->
+            <div class="about-img-box">
+                <div class="profile-frame">
+                    <!-- Cambia 'tu-foto.jpg' por el nombre real de tu archivo de imagen -->
+                    <img src="majo.jpg" alt="María José Erazo" class="profile-img">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="profile-caption">
+                    <i class="fas fa-code-branch"></i> Medellín, Colombia 🇨🇴
+                </div>
+            </div>
+
+            <!-- Columna de Tarjetas -->
+            <div class="about-cards-grid">
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Semillero Quipux</h3>
+                    <p>Una experiencia formativa inolvidable marcada por el aprendizaje continuo, la resolución analítica de problemas lógicos y la pasión por construir soluciones reales.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>Mentalidad de Crecimiento</h3>
+                    <p>Convencida de que cada reto complejo, error de sintaxis o depuración de bases de datos es una valiosa oportunidad para fortalecernos como profesionales.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-heart"></i></div>
+                    <h3>Propósito Humano</h3>
+                    <p>Busco combinar la ingeniería de software con un fuerte sentido de empatía y comunicación asertiva para desarrollar productos digitales útiles para la sociedad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Proyectos -->
+    <section class="projects section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+            <p class="section-desc">Soluciones tecnológicas desarrolladas con arquitectura sólida, bases de datos y enfoque en experiencia de usuario.</p>
+            
+            <div class="projects-grid">
+                <!-- Green Task -->
+                <div class="project-card featured">
+                    <div class="project-badge">Proyecto Estrella</div>
+                    <div class="project-content">
+                        <h3>Green Task</h3>
+                        <p class="project-tagline">Aplicación web ecológica e integral</p>
+                        <p class="project-desc">Sistema web con enfoque ambiental enfocado en la gestión de reciclaje. Cuenta con control de acceso por roles (usuario y administrador), integración robusta con base de datos relacional y generación dinámica de facturas y reportes.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>PHP</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/majoerazo2010-byte" target="_blank" class="btn-link"><i class="fab fa-github"></i> Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portafolio Personal -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Portafolio Creativo UI</h3>
+                        <p class="project-tagline">Interfaz Moderna & Interactiva</p>
+                        <p class="project-desc">Sitio web personal desarrollado desde cero con diseño glassmorphism, modo oscuro/claro, terminal interactiva en JavaScript y animaciones fluidas.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/majoerazo2010-byte" target="_blank" class="btn-link"><i class="fab fa-github"></i> Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section class="skills section" id="habilidades">
+        <div class="container">
+            <h2 class="section-title">Habilidades & <span>Valores</span></h2>
+            <p class="section-desc">El balance perfecto entre la competencia técnica y la calidad humana.</p>
+
+            <div class="skills-wrapper">
+                <div class="skills-column">
+                    <h3><i class="fas fa-laptop-code"></i> Stack Tecnológico</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">JavaScript (Nativo)</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL & Bases de Datos</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3><i class="fas fa-users-cog"></i> Habilidades Blandas</h3>
+                    <div class="skill-tags soft">
+                        <span class="skill-tag soft-tag">Comunicación Asertiva</span>
+                        <span class="skill-tag soft-tag">Paciencia y Resiliencia</span>
+                        <span class="skill-tag soft-tag">Trabajo en Equipo</span>
+                        <span class="skill-tag soft-tag">Empatía y Solidaridad</span>
+                        <span class="skill-tag soft-tag">Honestidad y Responsabilidad</span>
+                        <span class="skill-tag soft-tag">Puntualidad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Hobbies -->
+    <section class="hobbies section" id="hobbies">
+        <div class="container">
+            <h2 class="section-title">Más allá del <span>Código</span></h2>
+            <p class="section-desc">Mis pasatiempos y pasiones alimentan mi creatividad y mi mentalidad de aprendizaje continuo.</p>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <i class="fas fa-swimmer"></i>
+                    <h4>Deporte & Disciplina</h4>
+                    <p>Practico natación y voleibol, fomentando el trabajo en equipo, la constancia y el rendimiento bajo presión.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h4>Lectura & Análisis</h4>
+                    <p>Apasionada por la lectura reflexiva sobre pensamiento crítico, historia de Colombia y problemáticas sociales.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Arte & Manualidades</h4>
+                    <p>Pintar, tejer y coser; actividades manuales que potencian mi atención al detalle, la paciencia y el diseño visual UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Terminal Interactiva -->
+    <section class="terminal-section section" id="terminal">
+        <div class="container">
+            <h2 class="section-title">Consola <span>Interactiva</span></h2>
+            <p class="section-desc">Escribe comandos en mi terminal virtual para consultar datos rápidamente.</p>
+            
+            <div class="terminal-window">
+                <div class="terminal-top">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">majo@portfolio:~ (bash)</span>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <p class="welcome-line">¡Bienvenido a mi terminal! Escribe un comando para comenzar.</p>
+                    <p class="help-hint">Comandos disponibles: <span class="cmd-hl">help</span>, <span class="cmd-hl">skills</span>, <span class="cmd-hl">contacto</span>, <span class="cmd-hl">hobbies</span>, <span class="cmd-hl">clear</span></p>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt-symbol">majo@dev:~$</span>
+                    <input type="text" id="terminal-input" placeholder="Escribe un comando (ej. help)..." autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact section" id="contacto">
+        <div class="container">
+            <h2 class="section-title">¡Hablemos y <span>Conectemos</span>!</h2>
+            <p class="section-desc">¿Tienes un proyecto en mente, una oportunidad o quieres saludar? Escríbeme.</p>
+
+            <div class="contact-card-box">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Correo Electrónico</h4>
+                        <a href="mailto:majoerazo2010@gmail.com">majoerazo2010@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/majoerazo2010-byte" target="_blank">majoerazo2010-byte</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Medellín, Colombia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mascota Interactiva Avanzada (Estrellita tierna y animada) -->
+    <div class="interactive-pet" id="interactive-pet" title="¡Haz clic para hablar conmigo y saltar!">
+        <div class="pet-bubble" id="pet-bubble">¡Hola! ✨ Haz clic en mí</div>
+        <div class="pet-avatar">
+            <div class="star-shape">
+                <div class="star-face">
+                    <div class="pet-eyes">
+                        <span class="eye left"></span>
+                        <span class="eye right"></span>
+                    </div>
+                    <div class="pet-mouth"></div>
+                </div>
+            </div>
+            <!-- Pequeñas chispas mágicas alrededor -->
+            <div class="sparkle s1">✨</div>
+            <div class="sparkle s2">⭐</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 María José Erazo Muñoz. Diseñado con pasión y código nativo.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="scrip.js"></script>
+</body>
+</html>
